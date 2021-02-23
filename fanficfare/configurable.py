@@ -67,7 +67,6 @@ from .browsercache import BrowserCache
 try:
     from . import adapters
 except ImportError:
-    import sys
     if "fanficfare.adapters" in sys.modules:
         adapters = sys.modules["fanficfare.adapters"]
     elif "calibre_plugins.fanficfare_plugin.fanficfare.adapters" in sys.modules:
